@@ -1,0 +1,6 @@
+print("hello")
+print("hello world")
+print("hello"*3)
+print("-"*30)
+print("run program")
+print("-"*30)
