@@ -53,3 +53,11 @@ else:
 # print(int(n))
 # n=3
 # print("%02d" % n)
+
+#[시작번호:끝번호:스탭]
+str1="abcdefg"
+print(str1[1:6:2])  # bdf
+print(str1[:5])     # abcd
+print(str1[5:2:-1]) # fed
+print(str1[::-1])   # gfedcba
+
