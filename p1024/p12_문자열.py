@@ -8,7 +8,7 @@ print("%s월 %s일 생입니다." % (jumin[2:4], jumin[4:6]))
 #주민번호가 14자리인지 7번자리 숫자가 1-8까지의 숫자인지 확인
 
 #1+2번
-if((len(jumin)==14) and (1<=(int(jumin[7]))<=8)):
+if((len(jumin)==14) and (1<=(int(jumin[7]))<=8)): # (int(jumin[7])>=1) and (int(jumin[7])<=8)라고 쓰는게 좋다.
     print("주민번호를 제대로 입력하셨습니다.")
 else:
     print("주민번호를 잘못 입력하셨습니다.")
