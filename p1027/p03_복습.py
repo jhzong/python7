@@ -23,3 +23,10 @@ a=input("숫자를 입력하시오.")
 # input으로 받은 값은 문자열 취급.
 print(int(a)+10)
 # 연산을 하려면 int()(정수), float()(실수)을 이용해 문자열을 숫자 타입으로 변환
+
+# 두수를 받아 함을 출력하시오.
+n1=input("number1") #100
+n2=input("number2") #200
+print(n1+n2) #문자열 연결연산자 => 100200
+print(int(n1)+int(n2)) #300
+
