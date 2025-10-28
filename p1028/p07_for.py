@@ -9,22 +9,38 @@
 #     print("{} no. you typed {}".format(i+1,num))
 
 # sum=0
-# for i in range(5):
+# num_list=[]
+# for i in range(1,11):
 #     num=int(input("type a number>>"))
 #     sum=sum+num
-#     print("{} no. you typed {}. s.total is {}".format(i+1,num,sum))
+#     num_list.append(num)
+#     print("{} no. you typed {}. s.total is {}".format(i,num,sum))
 
-# print("total : {}".format(sum))
+# print("total : {}\nlist of numbers {}".format(sum,num_list))
 
-# 1~10 합
+# # 1~10 합
+# sum=0
+# for i in range(1,11):
+#     sum=sum+i
+
+# print(sum)
+
+# 1~10까지 홀수의 합계
+# range 스탭
 sum=0
-for i in range(1,11):
+for i in range(1,11,2):
     sum=sum+i
 
-print(sum)
+print("sum of odd numbers : {}".format(sum))
 
 
+# if
+sum=0
+for i in range(1,11):
+    if i%2!=0:
+       sum=sum+i # 들여쓰기...
 
+print("sum of odd numbers : {}".format(sum))
 
 
 
