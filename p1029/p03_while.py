@@ -64,7 +64,7 @@ while True:
 
 print("name\tKor\tEng\tMath\tSum\tAvg")
 print("-"*50)
-
 print("{}\t{}\t{}\t{}\t{}\t{:.2f}".format(*info)) # 전개연산자
+
 stu_list.append(info)
 
