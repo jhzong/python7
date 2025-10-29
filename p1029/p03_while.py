@@ -55,16 +55,18 @@ while True:
         avg=sum/3
 
         info=[name,kor,eng,math,sum,avg]
+        stu_list.append(info)
 
+        print("[leaderboard]")
+        print("name\tKor\tEng\tMath\tSum\tAvg")
+        print("-"*50)
+        for i in range(len(stu_list)):
+            print("{}\t{}\t{}\t{}\t{}\t{:.2f}".format(*info)) # 전개연산자
     elif choice==2:
         print("[학생성적출력]")
     elif choice==3:
         print("[학생성적수정]")
     print()
 
-print("name\tKor\tEng\tMath\tSum\tAvg")
-print("-"*50)
-print("{}\t{}\t{}\t{}\t{}\t{:.2f}".format(*info)) # 전개연산자
 
-stu_list.append(info)
-
+print(stu_list)
