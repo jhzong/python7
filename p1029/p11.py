@@ -1,3 +1,4 @@
+## 여러 단순한 리스트 뽑는법
 # a_list=[1,2,3,4,5,6,7,8,9]
 # print(a_list)
 # b_list=list(range(1,10))
