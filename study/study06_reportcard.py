@@ -1,11 +1,7 @@
 # student score record
 import random
-stu_list=[
-    [1,"Hong",80,80,80,240,80.00],
-    [2,"Yuu",90,90,90,270,90.00],
-    [3,"lee",100,100,100,300,100.00]  
-]
-stu_count=4
+stu_list=[]
+stu_count=0
 title=["No.","name","Kor","Eng","Math","T.sum","Avg"]
 
 while True:
@@ -22,13 +18,35 @@ while True:
     
     if choice==1:    # record
         print("<< record score >>")
+        name=input("enter name>>")
+        kor=int(input("enter Kor score>>"))
+        eng=int(input("enter Eng score>>"))
+        math=int(input("enter Math score>>"))
+        sum=kor+eng+math
+        avg=sum/3
+    
+        info=[name,kor,eng,math,sum,avg]
+        stu_list.append(info)
+
+        print("[Student score record]")
+        print("name\tKor\tEng\tMath\tSum\tAvg")
+        print("-"*50)
+        for i in range(len(stu_list)):
+            print("{}\t{}\t{}\t{}\t{}\t{:.2f}".format(*info)) # 전개연산자
+            
     elif choice==2:  # print
         print("<< print record >>")
+    
+    
     elif choice==3:  # edit
         print("<< edit score >>")
+    
+    
     elif choice==4:  # delete
         print("<< delete score >>")
+    
+    
     elif choice==0:
-        print("<<Terminating record>>")
+        print("<<Terminating program>>")
         print()
         break
