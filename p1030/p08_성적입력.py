@@ -1,4 +1,3 @@
-# student score record
 import random
 stu_list=[
     [1,"Hong",80,80,80,240,80.00],
@@ -8,6 +7,7 @@ stu_list=[
 stu_count=4
 title=["No.","name","Kor","Eng","Math","T.sum","Avg"]
 
+# student score record
 while True:
     print("-"*50)
     print(""*10,"Student score record")
