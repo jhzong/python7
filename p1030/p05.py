@@ -25,11 +25,32 @@
 #     print(bb,end=" ")
 
 
-stu_list=[
-    ["Hong",80,80,80,240,80.00],
-    ["Yuu",90,90,90,270,90.00],
-    ["lee",100,100,100,300,100.00]    
-]
+# stu_list=[
+#     ["Hong",80,80,80,240,80.00],
+#     ["Yuu",90,90,90,270,90.00],
+#     ["lee",100,100,100,300,100.00]    
+# ]
+
+# print("Score Editor")
+# print("0. Hong")
+# print("1. Yuu")
+# print("2. Lee")
+# print("-"*30)
+# num=int(input("enter student number>>"))
+# #-------------Kor edit--------------------
+# print("Editing {}'s Kor score".format(stu_list[num][0]))
+# print("current Kor score :",stu_list[num][1])
+# score=int(input("enter new Kor score>>"))
+# stu_list[num][1]=score #Kr score
+# stu_list[num][4]=stu_list[num][1]+stu_list[num][2]+stu_list[num][3] #T.sum of Hong
+# stu_list[num][5]=stu_list[num][4]/3 #Avg of Hong
+
+# print(stu_list)
+# Kor
+
+
+
+
 
 # print(stu_list[1][3])
 # print(stu_list[2][0])
@@ -47,23 +68,23 @@ stu_list=[
 #--------
 #수정하고 싶은 학생번호
 #국어점수 변경
-print(
-    '''
-    [수정할 학생번호]
-    0.Hong
-    1.Yuu
-    2.Lee
-    '''
-)
+# print(
+#     '''
+#     [수정할 학생번호]
+#     0.Hong
+#     1.Yuu
+#     2.Lee
+#     '''
+# )
 
-num=int(input("enter student number>>"))
-#1번 선택
-#국어를 70 변경, 합계와 평균 출력
-stu_list[1][1]=70
-stu_list[1][4]=stu_list[1][2]+stu_list[1][2]+stu_list[1][3]
-stu_list[1][5]=stu_list[1][4]/3
+# num=int(input("enter student number>>"))
+# #1번 선택
+# #국어를 70 변경, 합계와 평균 출력
+# stu_list[1][1]=70
+# stu_list[1][4]=stu_list[1][1]+stu_list[1][2]+stu_list[1][3]
+# stu_list[1][5]=stu_list[1][4]/3
 
-print(stu_list)
+# print(stu_list)
 
 
 
@@ -74,3 +95,29 @@ print(stu_list)
 #     while True:
 #         stu_list[n1][n2]=
 
+stu_list=[
+    ["Hong",80,80,80,240,80.00],
+    ["Yuu",90,90,90,270,90.00],
+    ["lee",100,100,100,300,100.00]    
+]
+title=["name","Kor","Eng","Math","T.sum","Avg"]
+
+print("\t[Score Editor]\t")
+print("0. Hong")
+print("1. Yuu")
+print("2. Lee")
+print("-"*30)
+#-------------student and subject selection--------------------
+num=int(input("enter student number>>"))
+print("<1:Kor 2:Eng 3:Math>")
+subject=int(input("enter subject to edit>>"))
+print("<<Editing {}'s {} score>>".format(stu_list[num][0],title[subject]))
+print("current score : {}".format(stu_list[num][subject]))
+
+#--------------------score editing-----------------------------
+score=int(input("enter {} new score>>".format(title[subject])))
+stu_list[num][subject]=score #subject score
+stu_list[num][4]=stu_list[num][1]+stu_list[num][2]+stu_list[num][3] #T.sum of stu(num)
+stu_list[num][5]=stu_list[num][4]/3 #Avg of stu(num)
+
+print(stu_list)
