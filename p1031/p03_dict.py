@@ -27,3 +27,48 @@
 stu_list=[
     {'no':1,'name':'Hong','kor':100}
 ]
+
+print(stu_list[0]['no'])
+print(stu_list[0]['name'])
+
+
+a_dic={'no':1,'name':'Hong','kor':100}
+# 국어점수 출력
+print(a_dic['kor'])# 없는 key값 입력시 에러
+
+# dictionary get()
+print(a_dic.get('kor1'))# 없는 key값 입력시 none타입으로 출력.
+
+# dictionary keys()
+print(a_dic.keys())
+a_list=list(a_dic.keys())
+print(a_list[1])
+# dictionary value()
+print(a_dic.values())
+b_list=list(a_dic.values())
+print(b_list)
+
+# dictionary item() - key,value
+print(a_dic.items())
+c_list=list(a_dic.items())
+print(c_list)
+
+
+aa_list=[
+    ['no',1],
+    ['name','Hong'],
+    ['kor',100]
+]
+
+print(aa_list[1][1])
+
+
+
+
+
+stu_dic={'no':1,'name':'Hong','kor':100}
+if 'kor' in stu_dic:
+    print("key exist")
+else:
+    print("no key")
+
