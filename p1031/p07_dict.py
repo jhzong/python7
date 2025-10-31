@@ -58,7 +58,7 @@ enlish={
 }
 
 
-q=random.sample(range(20),5) # 문제 번호 5개 뽑기
+q=random.sample(range(20),5) # 랜덤하게 문제번호 5개 뽑기
 q.sort()
 score={} # 정/오답 저장공간
 print(q) #[4, 10, 14, 15, 17, 18]
