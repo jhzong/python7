@@ -80,7 +80,7 @@ while True:
         
     elif choice==4:  # delete
         print("<< 성적 삭제 >>")
-        print(" "*10,"학생 성적" )
+        print(" "*10,"학생 성적" )      
         print("-"*50)
         for idx, stus in enumerate(stu_list):
             print("{}.{}\t{}".format(idx+1,stus[0],stus[1]))
