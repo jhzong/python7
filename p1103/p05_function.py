@@ -56,3 +56,7 @@ while True:
         break
     b=int(input("for b>>"))
     cal(a,b)
+    
+    
+    
+    
