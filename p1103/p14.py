@@ -9,10 +9,10 @@ answer=[]
 lotto=random.sample(range(1,46),6)
 lotto.sort()
 print(lotto)
-count=[]
+counts=[]
 
 for i in range(6):
-    auto=random.sample(range(1,46),5)
+    auto=random.sample(range(1,46),6)
     auto.sort()
     a_list.append(auto)
 
@@ -22,12 +22,12 @@ for a in a_list:
 # auto=random.sample(range(1,46),6)
 # print(auto)
 
-for a in a_list:
-    for i in a:
-        if i in lotto:
-            answer.append(i)
-            count+=len(answer)
-print(answer,f"{count}개 맞춤")
+# for a in a_list:
+#     for i in a:
+#         if i in lotto:
+#             answer.append(i)
+#             count+=len(answer)
+# print(answer,f"{count}개 맞춤")
 
 # for a in auto:
 #     if a in lotto:
@@ -43,4 +43,8 @@ def cal():
         for a in auto:
             if a in lotto:
                 count+=1
-count.append(count)
+        counts.append(count)
+        
+# 맞춘개수
+cal()
+print(counts)
