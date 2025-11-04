@@ -14,11 +14,8 @@ stu_count=10104
 
 # stu_list=[
 #     {'stu_no':10101,'name':'Hong','kor':80,'eng':80,'math':80,'sum':240,'avg':80.00,'rank':0}
-#     {'stu_no':10102,'name':'Yuu','kor':90,'eng':80,'math':80,'sum':240,'avg':80.00,'rank':0}
-#     {'stu_no':10103,'name':'Lee','kor':100,'eng':80,'math':80,'sum':240,'avg':80.00,'rank':0}
-#     [10101,"Hong",80,80,80,240,80.00,0],
-#     [10102,"Yuu",90,90,90,270,90.00,0],
-#     [10103,"lee",100,100,100,300,100.00,0]
+#     {'stu_no':10102,'name':'Yuu','kor':90,'eng':90,'math':90,'sum':270,'avg':90.00,'rank':0}
+#     {'stu_no':10103,'name':'Lee','kor':100,'eng':100,'math':100,'sum':300,'avg':100.00,'rank':0}
 # ]
 
 # main menu 함수

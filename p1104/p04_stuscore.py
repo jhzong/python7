@@ -1,4 +1,3 @@
-import random
 import stu_func
 
 
