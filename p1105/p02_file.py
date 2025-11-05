@@ -1,20 +1,20 @@
 import os
-#-----[파일쓰기]-----------------------------------------------
-# w: 쓰기 - 덮어쓰기, a: 추가 - 기존파일에 추가 
-# f=open('c:\\down\\ccc.txt','w') # w모드에서는 파일이 없으면 자동으로 해당경로에 생성.
-f=open('c:\\down\\ccc.txt','a') # a모드
-stu_data=''
-for i in range(1):
-    
-    txt = input("글자을 입력하시오>>\n")
-    stu_data += txt+'\n'
 
+#-----[덤]-------------------------------------------------
+# with open() 파일입출력
+with open('c:/down/bbb.txt','r',encoding='utf8') as f:
+    while True:
+        txt=f.readline()
+        if txt=='': break
+        print(txt.strip())
+# f.close() 생략가능
 
-f.write(stu_data)
-
-f.close()
-print("완료!")
-
+# f=open('c:/down/bbb.txt','r',encoding='utf8')
+# while True:
+#     txt=f.readline()
+#     if txt=='': break
+#     print(txt.strip())
+# f.close
 
 #-----[파일읽기]-----------------------------------------------
 # # 1. 통로(stream):파일열기
@@ -40,3 +40,41 @@ print("완료!")
 #     print(txt,end='')
 
 # f.close()
+
+#-----[파일쓰기]-----------------------------------------------
+# # w: 쓰기 - 덮어쓰기, a: 추가 - 기존파일에 추가 
+# f=open('c:\\down\\ccc.txt','w') # w모드에서는 파일이 없으면 자동으로 해당경로에 생성.
+# stu_data=''
+# for i in range(1):
+    
+#     txt = input("글자을 입력하시오>>\n")
+#     stu_data += txt+'\n'
+
+
+# f.write(stu_data)
+
+# f.close()
+# print("완료!")
+
+#-----[파일에 추가]-------------------------------------------------
+# f=open('c:\\down\\ccc.txt','a') # a모드
+# for i in range(5):
+#     f.write(f"안녕하세요. {i} \n")
+
+# f.close
+
+# print("완료!")
+
+#-----[파일복사]-------------------------------------------------------
+# r:문자읽기,w:문자쓰기,rb:파일읽기,wb:파일쓰기
+f= open('c:/down/nct_wish_01.jpg','rb')
+f2= open('c:/aaa/nct_wish_01.jpg','wb')
+
+while True:
+    nctfile=f.read(1) # read():파일과 문자 읽기 모두가능, readline()/readlines():문자읽기만 가능
+    if not nctfile: break
+    f2.write(nctfile)
+
+f.close()
+f2.close()
+print("복사완료!")
