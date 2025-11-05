@@ -15,7 +15,7 @@ stu_list = [
         'total':240,'avg':80.00,'rank':0},
     {'stuno':10102,'name':'유관순','kor':90,'eng':90,'math':90,\
         'total':270,'avg':90.00,'rank':0},
-    {'stuno':10102,'name':'이순신','kor':100,'eng':100,'math':100,\
+    {'stuno':10103,'name':'이순신','kor':100,'eng':100,'math':100,\
         'total':300,'avg':100.00,'rank':0},
 ]
 
@@ -25,26 +25,21 @@ stu_list = [
 # {stu_list[0]['eng']},{stu_list[0]['math']},{stu_list[0]['total']},\
 # {stu_list[0]['avg']},{stu_list[0]['rank']}\n'
 
-#----------[이미 있는 데이터 .txt파일로 옮기기]-----------------------------------
-f=open('c:\\down\\aaa.txt','w')
+#----------[dict타입->문자열]-----------------------------------
+
 stu_data=''
-for i in range(3):
-    stu_str=f'{stu_list[i]['stuno']},{stu_list[i]['name']},{stu_list[i]['kor']},\
+for i in range(len(stu_list)):
+    stu_data+=f'{stu_list[i]['stuno']},{stu_list[i]['name']},{stu_list[i]['kor']},\
 {stu_list[i]['eng']},{stu_list[i]['math']},{stu_list[i]['total']},\
 {stu_list[i]['avg']},{stu_list[i]['rank']}\n'
-    stu_data += stu_str+'\n'
 
 
+#----------[데이터쓰기]-------------------------------------------------
+
+f=open('c:\\down\\aaa.txt','w')
 f.write(stu_data)
-
 f.close()
 print("완료!")
-
-#----------[추가 데이터 기입하기]-------------------------------------------------
-with open('c:/down/bbb.txt','r',encoding='utf8') as f:
-    while True:
-        
-    
 
 
 
