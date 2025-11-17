@@ -46,7 +46,8 @@ stu_info[e-1][5]=stu_info[e-1][2]+stu_info[e-1][3]+stu_info[e-1][4]
 stu_info[e-1][6]=stu_info[e-1][5]/3
 
 # 삭제
-
+# 리스트에서 학생 데이터를 지정해 삭제
+print()
 
 
 # 종료
